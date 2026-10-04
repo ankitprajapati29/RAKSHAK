@@ -37,3 +37,9 @@ Response:
 - Detection engine: next phase
 - UI: next phase
 - Voice/OCR: later phase
+
+## Backend
+
+- Backend Health API: https://rakshak-backend-4qa3.onrender.com/health
+- Runtime: FastAPI
+- Core scam detection remains local-first and privacy-focused.
