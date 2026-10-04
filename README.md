@@ -1,45 +1,65 @@
 # RAKSHAK
 
-Investment message scam detection and risk analysis tool.
+### Investment Scam Detection & Risk Awareness
 
-## Project Structure
+RAKSHAK is a privacy-first system designed to help users identify warning signs in suspicious investment messages before they transfer money or share sensitive information.
 
-- frontend/ � React + TypeScript + Vite
-- backend/ � FastAPI scaffold
+It analyzes text, screenshots, and voice input, identifies explainable red flags, highlights the exact evidence behind each warning, and provides practical safe next steps.
 
-## Architecture
+## Key Features
 
-- Local-first detection
-- Privacy-first design
-- Hindi + English + Hinglish support
-- Text, voice and screenshot input
-- No telemetry or tracking
-- No database in MVP
-- No external API dependency for core detection
+- Text, screenshot, and voice input
+- Hindi and English support
+- Hinglish-aware text normalization
+- Explainable red-flag detection
+- Evidence-based risk classification
+- Suspicious URL structural analysis
+- Safe next-step guidance
+- Local-first and privacy-focused processing
+- Local analysis history
 
-## Backend
+## Risk Classification
 
-The backend is currently a minimal health-check scaffold.
+RAKSHAK uses three clear risk levels:
 
-Endpoint:
+- **Low Concern** — No configured warning pattern detected; this does not mean the message is safe or verified.
+- **Suspicious** — Warning signs require additional caution and verification.
+- **High Risk Indicators** — Multiple or serious warning signs detected.
 
-GET /health
+## Technology Stack
 
-Response:
+- **Frontend:** React, TypeScript, Vite
+- **OCR:** Tesseract.js
+- **Voice:** Browser Speech Recognition
+- **Backend:** Python, FastAPI
+- **Detection:** Deterministic and explainable rules/patterns
+- **Storage:** Browser Local Storage
 
-{"status": "ok"}
+## Privacy & Safety
 
-## Development Status
+RAKSHAK follows a local-first approach for its core detection workflow.
 
-- Foundation setup complete
-- Tailwind CSS v4 configured
-- FastAPI health endpoint configured
-- Detection engine: next phase
-- UI: next phase
-- Voice/OCR: later phase
+The MVP does not require sending user messages, screenshots, or analysis content to an external AI service for core scam detection.
 
-## Backend
+RAKSHAK provides risk awareness and does not provide Buy/Sell/Hold investment advice or claim guaranteed scam detection.
 
-- Backend Health API: https://rakshak-backend-4qa3.onrender.com/health
-- Runtime: FastAPI
-- Core scam detection remains local-first and privacy-focused.
+## Live Prototype
+
+**[Try RAKSHAK →](https://rakshak-5tte.onrender.com/)**
+
+## Source Code
+
+**[View RAKSHAK on GitHub →](https://github.com/ankitprajapati29/RAKSHAK)**
+
+## Hackathon
+
+Developed for the **Sangyan Hackathon**  
+**Indian Institute of Technology (BHU), Varanasi**
+
+**Track A — Digital Fraud & Scam Resilience**
+
+## Team
+
+**Team AlgoRise**
+
+> **From uncertainty to clarity — before money moves.**
