@@ -128,15 +128,12 @@ Users should independently verify financial claims, avoid sharing OTPs or creden
 
 <div align="center">
 
-**Built by Team Ankit Prajapati**
+**Built by Ankit Prajapati**
 
 *From uncertainty to clarity — before money moves.*
 
 <div align="center">
 
-**Built by Team AlgoRise**
-
-*Created by Ankit Prajapati & Team*
 
 *From uncertainty to clarity — before money moves.*
 
