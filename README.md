@@ -133,8 +133,3 @@ Users should independently verify financial claims, avoid sharing OTPs or creden
 *From uncertainty to clarity — before money moves.*
 
 <div align="center">
-
-
-*From uncertainty to clarity — before money moves.*
-
-</div>
