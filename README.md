@@ -31,30 +31,30 @@ RAKSHAK is a scam-awareness system designed to help users assess suspicious inve
 
 It analyzes available message content, identifies explainable warning signs, highlights supporting evidence, and provides practical safety guidance.
 
-The project focuses on transparency rather than presenting a simple unexplained “Scam” or “Not a Scam” result.
+The project focuses on transparency and privacy rather than presenting a simple unexplained “scam” or “not a scam” result.
 
 ## ✨ Key Features
 
 - 💬 **Multiple Input Modes** — Text, screenshots, and voice input.
-- 🌐 **Hindi & English Support** — Designed for multilingual users.
-- 🗣️ **Hinglish-Aware Processing** — Handles supported mixed Hindi-English expressions.
-- 🚩 **Red-Flag Detection** — Identifies configured scam-warning patterns.
-- 🔎 **Explainable Results** — Highlights evidence behind detected warnings.
-- 🔗 **URL Risk Analysis** — Examines potentially suspicious URL characteristics.
-- 📊 **Risk Classification** — Organizes findings into understandable risk categories.
-- 🧭 **Safety Guidance** — Suggests practical next steps for verification.
-- 🔒 **Privacy-Focused Design** — Uses a local-first approach for core detection.
-- 🗂️ **Analysis History** — Browser-based history where implemented.
+- 🌐 **Hindi & English Support** — Designed for users communicating in different languages.
+- 🗣️ **Hinglish-Aware Processing** — Handles common mixed Hindi-English expressions where supported.
+- 🚩 **Explainable Red-Flag Detection** — Identifies configured warning patterns.
+- 🔎 **Evidence-Based Results** — Shows the text or signals behind detected warnings.
+- 🔗 **Suspicious URL Analysis** — Examines URL structure for potentially suspicious characteristics.
+- 📊 **Risk Classification** — Organizes findings into clear risk categories.
+- 🧭 **Safe Next Steps** — Provides practical guidance for further verification.
+- 🔒 **Privacy-Focused Design** — Local-first processing for the core detection workflow.
+- 🗂️ **Local Analysis History** — Keeps analysis history in browser storage where implemented.
 
 ## 📊 Risk Classification
 
 | Level | Meaning |
 |---|---|
-| 🟢 **Low Concern** | No configured warning pattern detected. This does not guarantee safety. |
-| 🟡 **Suspicious** | Warning signs detected; independent verification is recommended. |
-| 🔴 **High Risk Indicators** | Serious or multiple warning signs require extra caution. |
+| 🟢 **Low Concern** | No configured warning pattern was detected. This does not establish that a message is safe. |
+| 🟡 **Suspicious** | Warning signs were detected; additional caution and independent verification are recommended. |
+| 🔴 **High Risk Indicators** | Multiple or serious warning signs require careful review before taking action. |
 
-*Risk indicators are not a guarantee that a message is fraudulent or legitimate.*
+RAKSHAK provides risk indicators, not a guaranteed prediction of fraud. A message with no detected warning signs may still be malicious.
 
 ## ⚙️ Technology Stack
 
@@ -65,7 +65,7 @@ The project focuses on transparency rather than presenting a simple unexplained 
 | OCR | Tesseract.js |
 | Voice Input | Browser Speech Recognition |
 | Backend | Python, FastAPI |
-| Detection | Explainable, rule-based patterns |
+| Detection | Deterministic, explainable rules and patterns |
 | Storage | Browser Local Storage |
 
 ## 🔄 How It Works
@@ -84,56 +84,60 @@ Text / Screenshot / Voice Input
       Risk Classification
               ↓
     Safe Next-Step Guidance
+```
 
- ## 🔐 Privacy & Safety
+## 🔐 Privacy & Safety
 
-- 🔒 **Privacy-Focused:** Core detection is designed around a local-first approach.
-- 💾 **Local Storage:** Analysis history may be stored in the browser.
-- 🛡️ **Stay Safe:** Never share OTPs, passwords, or sensitive financial details.
+RAKSHAK follows a local-first approach for its core detection workflow.
 
-*Privacy depends on the actual implementation and deployment. Browser Local Storage is not encrypted.*
+- Core detection is designed to work without sending user messages, screenshots, or analysis content to an external AI service.
+- Analysis history can be stored locally in the browser.
+- Users should avoid sharing sensitive personal or financial information unnecessarily.
+- Browser-local storage is not encrypted storage and may be accessible to someone with access to the same browser profile.
 
----
+**Privacy behavior depends on the actual implementation and deployment configuration.** Review network requests and storage behavior before treating any deployment as fully private.
 
 ## 🌐 Project Links
 
-<div align="center">
-
-<a href="https://rakshak-5tte.onrender.com/">
-  <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Try_RAKSHAK-16a34a?style=for-the-badge" alt="Live Demo"/>
-</a>
-<a href="https://github.com/ankitprajapati29/RAKSHAK">
-  <img src="https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/>
-</a>
-
-</div>
+- **Live Website:** https://rakshak-5tte.onrender.com/
+- **GitHub Repository:** https://github.com/ankitprajapati29/RAKSHAK
 
 ## 🏆 Hackathon
 
 - **Event:** Sangyan Hackathon
-- **Institution:** IIT (BHU), Varanasi
-- **Track:** Digital Fraud & Scam Resilience
+- **Institution:** Indian Institute of Technology (BHU), Varanasi
+- **Track:** Track A — Digital Fraud & Scam Resilience
 - **Team:** AlgoRise
 
 ## 🔮 Future Scope
 
-- 🌐 Enhanced Hindi, English, and Hinglish detection.
-- 🔗 Improved URL risk analysis.
-- 🧪 Better testing and detection accuracy.
-- 🔐 Stronger privacy and security safeguards.
+- Improve detection across Hindi, English, and Hinglish messages.
+- Expand explainable scam-warning patterns.
+- Strengthen URL analysis and evidence presentation.
+- Improve accessibility for users with different digital literacy levels.
+- Evaluate detection performance using representative test cases.
+- Strengthen privacy safeguards and security testing.
 
 ## ⚠️ Disclaimer
 
-RAKSHAK is an educational scam-awareness tool, not a guarantee of fraud detection or financial advice. Always verify investment claims independently before transferring money.
+RAKSHAK is an educational scam-awareness and risk-screening project. It does not guarantee scam detection, verify the legitimacy of an investment, or provide Buy/Sell/Hold investment advice.
+
+Users should independently verify financial claims, avoid sharing OTPs or credentials, and consult appropriate official sources before transferring money.
 
 ---
 
 <div align="center">
 
-**🛡️ Built by Ankit Prajapati**
+**Built by Team Ankit Prajapati**
 
 *From uncertainty to clarity — before money moves.*
 
-[GitHub Profile](https://github.com/ankitprajapati29)
+<div align="center">
+
+**Built by Team AlgoRise**
+
+*Created by Ankit Prajapati & Team*
+
+*From uncertainty to clarity — before money moves.*
 
 </div>
